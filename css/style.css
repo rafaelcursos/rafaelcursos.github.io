@@ -23,15 +23,15 @@
     color: #fff;
 }
 
-#sobre, #cursos, #contato {
+.sobre, .cursos, .contato {
     height: 90vh;
 }
-#sobre{
+.sobre{
     background-color: darksalmon;
 }
-#cursos{
+.cursos{
     background-color: darkseagreen;
 }
-#contato{
+.contato{
     background-color: darkcyan;
 }

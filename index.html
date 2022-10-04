@@ -10,17 +10,22 @@
     <script src="./js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, options);
+        });
+    </script>
     <title>Rafael Cursos</title>
 </head>
 
 <body>
     <header id="home">
         <div class="navbar-fixed">
-            <nav class="cyan darken-4">
+            <nav class=" blue accent-4">
                 <div class="nav-wrapper container">
                     <a href="#" class="brand-logo">Logo</a>
-                    <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i
                             class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li><a href="#home"><i class="material-icons left">home</i>Home</a></li>
@@ -29,14 +34,15 @@
                         <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
+                <ul class="sidenav" id="mobile-demo">
+                    <li><a href="#home"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
             </nav>
         </div>
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="#home"><i class="material-icons left">home</i>Home</a></li>
-            <li><a href="#sobre">Sobre Nós</a></li>
-            <li><a href="#cursos">Cursos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
+
         <div class="banner">
             <div class="fill">
                 <h1>SJPAPER</h1>
@@ -47,8 +53,8 @@
     </header>
 
     <main>
-        <section id="sobre" class="section scrollspy">
-            <div class="container">
+        <section  class="section sobre">
+            <div id="sobre" class="container">
                 <h3>Sobre</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam perferendis facilis earum quibusdam
                     maiores nam provident ad hic pariatur, inventore error? Natus dolorum adipisci quam, quibusdam
