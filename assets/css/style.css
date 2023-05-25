@@ -2700,6 +2700,11 @@ p {
   padding-top: 120px;
   padding-bottom: 130px; }
 
+.pricing-area-aluno {
+  background-color: #000;
+  padding-top: 120px;
+  padding-bottom: 130px; }
+
 /*===== PRICING STYLE NINE =====*/
 .pricing-style {
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
